@@ -1,0 +1,16 @@
+##### by fanxiushu 2018-08-29
+
+TARGETNAME=..\..\wddm_filter
+TARGETTYPE=DRIVER
+
+C_DEFINES=$(C_DEFINES) -W3
+
+INCLUDES=\
+   $(DDK_INC_PATH);
+
+TARGETLIBS = $(DDK_LIB_PATH)\wdmsec.lib
+
+SOURCES= filter.cpp miniport.cpp vidpn.cpp main.cpp
+
+MSC_WARNING_LEVEL=/W2 /WX
+
