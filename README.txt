@@ -15,10 +15,14 @@ xdisp_virt可以去 https://github.com/fanxiushu/xdisp_virt 下载使用。
 
 公布的这个WDDM-HOOK源码，基本上是一年多前就做好的，后来也没做什么改进修改。
 大体实现了如何HOOK内核函数的办法来模拟出一个虚拟显示器，
+测试通过I7 4770K CPU集成的Intel显卡， vmware虚拟机显卡，GT740的N卡。
 驱动需要WDK7编译，勿使用WDK10 编译。
 至于驱动如何安装使用，以及相关原理，请详细查阅 CSDN文章：
 https://blog.csdn.net/fanxiushu/article/details/82731673
  WIN7以上系统WDDM虚拟显卡开发（WDDM Filter/Hook Driver 显卡过滤驱动开发之一） 
+ 
+鉴于wddm-hook的不确定性，因此通常并不帮忙开发定制，也不提供任何支持，
+有兴趣可自行下载源码玩玩，没兴趣就当路过凑凑热闹。
 
 另外最近发布的，联系比较紧密的，也是实现虚拟显示器功能的
 https://blog.csdn.net/fanxiushu/article/details/93524220
